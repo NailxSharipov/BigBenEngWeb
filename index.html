@@ -105,16 +105,13 @@
             text-decoration: none;
             margin:0px 10px;
         }
-        #canvas_container
-        {
+        #canvas {
             background: #fff;
             border: 1px solid #aaa;
             border-radius: 15px;
-            height: 515px;
-            margin: 20px 20px;
+            height: 512px;
+            width: 512px;
             overflow: hidden;
-            width: 690px;
-
             /* this fixes the overflow:hidden in Chrome/Opera */
             -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
         }
@@ -124,7 +121,7 @@
     <div id="recenter">
         <main>
             <div id="content">
-                <div style="height: 200px;"></div>
+                <div style="height: 250px;"></div>
                 <!-- <img src="https://nailxsharipov.github.io/BigBenEngWeb/bigbeneng.png" height="300" width="300" style="margin-bottom: 30px;"/> -->
                 <canvas id="canvas" width=512 height=512></canvas>
                 <script>
