@@ -105,7 +105,19 @@
             text-decoration: none;
             margin:0px 10px;
         }
+        #canvas_container
+        {
+            background: #fff;
+            border: 1px solid #aaa;
+            border-radius: 15px;
+            height: 515px;
+            margin: 20px 20px;
+            overflow: hidden;
+            width: 690px;
 
+            /* this fixes the overflow:hidden in Chrome/Opera */
+            -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+        }
     </style>
 </head>
 <body>
