@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, shrink-to-fit=YES">
-<script src="https://unpkg.com/rive-canvas@0.0.10/rive.js"></script>
+<script src="https://unpkg.com/rive-js@0.7.16/dist/rive.min.js"></script>
 <title>Big Ben English</title>
     <style>
         html {
@@ -114,8 +114,16 @@
             <div id="content">
                 <div style="height: 200px;"></div>
                 <!-- <img src="https://nailxsharipov.github.io/BigBenEngWeb/bigbeneng.png" height="300" width="300" style="margin-bottom: 30px;"/> -->
-                <canvas id="riveCanvas" width=512 height=512></canvas>
-                <script src="src/index.js"></script>
+                <canvas id="canvas" width=512 height=512></canvas>
+                <script>
+                // autoplays the first animation in the default artboard
+                new rive.Rive({
+                    src: 'bigbeneng.riv',
+                    canvas: document.getElementById('canvas'),
+                    autoplay: true,
+                });
+                </script>
+
                 <h1 style="margin-bottom: 100px;">Big Ben English</h1>
                 <h3 style="margin-bottom: 30px;">Email us at</h3>
                 <div style="margin-bottom: 80px;">
